@@ -2,17 +2,20 @@
 
 The Marvel-Spot project MVP allows the user post comments and vote in the commics that he/she reads. So, the user can vote up or down based on his opinion anytime he/she wishes.
 
-The user can select a commic for more details and create a post defining the category equal spoiler or comment.
+The user can select a commic for more details and create a post defining the category equal ```spoiler``` or ```comment```.
 
 ## The project is available on web
 
-The project is available on web through the following address:
-https://testmyhome-af24f.firebaseapp.com/
+The project is available on web published using firebase. You can access in the following address:
+https://testmyhome-af24f.firebaseapp.com/.
+
+In the project you can find some keys related to the firebase database and marvel api. You
+can find those keys in the configs folder.
 
 To access marvel-spot you need to have an google account and the authentication
 will use only the email and the username in the website.
 
-## How to execute the project in your machine
+## How to execute the project in your machine using the dev version
 
 You need to follow these instructions:
 1. Access the project folter and in the console and type command:
@@ -32,6 +35,18 @@ You can now view marvelspot in the browser.
 Note that the development build is not optimized.
 To create a production build, use yarn build.
 ```
+
+## How to create a production version
+
+We are using the [Create React App](https://github.com/facebookincubator/create-react-app), so
+it is possible build a production version. For that, you can type the following
+command: https://testmyhome-af24f.firebaseapp.com/.
+
+1. ```npm install``` - This command will install all the project dependencies;
+2. ```npm run build``` - This command will build a production version;
+
+The production version was deployed using the firebase hosting feature. You can access
+in the following address: https://testmyhome-af24f.firebaseapp.com/.
 
 ## Project structure
 ```bash
