@@ -1,8 +1,21 @@
 # Marvel-Spot Project
 
-The Marvel-Spot project MVP allows the user post comments and vote in the commics that he/she reads. So, the user can vote up or down based on his opinion anytime he/she wishes.
+The Marvel-Spot project MVP allows the user to create posts and vote in the commics that he/she read. So, the user can vote up or down based on his opinion anytime he/she wishes.
 
-The user can select a commic for more details and create a post defining the category equal ```spoiler``` or ```comment```.
+It is a digital catalog where the user can search for the commic and he/she can read the others opinion. The concept of the portal was based in the following [wireframes](project-marvel-spot-final.pdf). So, the user can select a commic for more details and create a post defining the category equal ```spoiler``` or ```comment```.
+
+We are using an API from Marvel to return all the commics produced and the firebase to save the users' posts.
+
+## Requirements to visualize the portal
+
+Browser: Chrome (latest version) / Firefox (lastes version) or Edge.
+Not compatible with mobile devices yet, but you can have friendly
+visualization on tablets.
+
+## Portal developed
+
+Browser: Chrome (latest version)
+OS: MacOS Mojave
 
 ## The project is available on web
 
