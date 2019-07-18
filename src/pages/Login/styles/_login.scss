@@ -1,0 +1,38 @@
+@import '../../../styles/core/vars.scss';
+
+.login {
+  &__header {
+    background-image: url('../../../assets/images/header-login.jpg');
+    height: 230px;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      margin: auto;
+    }
+
+    p.normal {
+      margin-top: 27px;
+    }
+  }
+
+  &__google {
+    background-color: $google-red;
+    border: 0;
+    border-radius: 20px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'robotoregular';
+    font-size: 1.1em;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 8px;
+    text-align: center;
+    width: 25%;
+  }
+}

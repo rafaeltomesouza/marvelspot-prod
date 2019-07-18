@@ -1,0 +1,85 @@
+@import "../../../styles/core/vars.scss";
+
+.addpost {
+  &__form {
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+
+    &-title {
+      display: flex;
+      list-style-type: none;
+      margin: -20px 0 -22px 41px;
+      padding: 0;
+      font-size: 1.7em;
+    }
+
+    &-inputs {
+      background: $gray-dark-transparency;
+      border: 1px solid $gray-dark;
+      border-radius: 15px;
+      padding: 30px;
+
+      &__vote {
+        display: flex;
+        font-size: 2em;
+        margin-top: 31px;
+
+        &__container {
+          display: flex;
+
+          &__plus {
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+          }
+
+          &__minus {
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+          }
+        }
+      }
+
+      &__comment {
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+
+        textarea {
+          background: $gray-light-transparency;
+          border: 1px solid $gray-dark;
+          color: $white;
+          font-size: 0.6em;
+          height: 100px;
+          padding-left: 0.4em;
+          width: 100%;
+        }
+      }
+
+      &__content-btn {
+        display: flex;
+        justify-content: flex-end;
+
+        &__save {
+          background-color: $red;
+          border: 0;
+          border-radius: 100px;
+          color: $white;
+          cursor: pointer;
+          font-family: 'bangersregular';
+          font-size: 3em;
+          display: flex;
+          height: 71px;
+          justify-content: center;
+          line-height: 1.3;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          width: 252px;
+        }
+      }
+    }
+  }
+}

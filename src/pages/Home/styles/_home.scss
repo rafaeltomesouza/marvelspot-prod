@@ -1,0 +1,44 @@
+@import '../../../styles/core/vars.scss';
+
+.home {
+  background-image: url('../../../assets/images/captain-america.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+
+  article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+
+    &__loading-more {
+      background-color: $black;
+      border: 1px solid $gray-dark;
+      border-radius: 20px;
+      color: $white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      font-family: 'robotoregular';
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 25%;
+    }
+
+    &__loading-more--hide {
+      display: none;
+    }
+
+    &__loading-more:hover {
+      background-color: $gray-light-transparency;
+    }
+  }
+
+}

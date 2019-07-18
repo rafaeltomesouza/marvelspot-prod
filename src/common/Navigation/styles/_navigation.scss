@@ -1,0 +1,56 @@
+@import "../../../styles/core/vars.scss";
+
+%ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: -20px 32px -20px 0;
+  padding: 0;
+}
+
+@mixin li() {
+  text-decoration: none;
+
+  a:hover, a:active, a:visited {
+    color: $white;
+  }
+
+  li {
+    text-align: center;
+    margin-right: 45px;
+    margin-top: 10px;
+  }
+}
+
+@mixin link() {
+  li a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.commic-nav {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7em;
+
+  &__invert {
+    font-size: 1.7em;
+    transform: scaleX(-1);
+    ul {
+      @extend %ul;
+      justify-content: flex-start;
+      margin: -20px 0px -20px 80px;
+
+      @include li();
+      @include link();
+    }
+  }
+
+  ul {
+    @extend %ul;
+    @include li();
+    @include link();
+  }
+}

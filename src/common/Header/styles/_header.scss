@@ -1,0 +1,34 @@
+@import '../../../styles/core/vars.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: $margin $margin 0 $margin;
+
+  &__logout-container {
+    display: flex;
+    font-size: 1.5em;
+
+    p {
+      margin: 0;
+      margin-right: 7px;
+    }
+
+    &__btn {
+      background-color: $black;
+      border: 0;
+      color: $white;
+      cursor: pointer;
+      font-size: 1em;
+      font-family: 'bangersregular';
+      padding-right: 40px;
+
+      > span {
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+      }
+    }
+  }
+}

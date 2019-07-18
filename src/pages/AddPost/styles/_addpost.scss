@@ -1,0 +1,12 @@
+@import '../../../styles/core/vars.scss';
+
+.addpost {
+  background-image: url('../../../assets/images/captain-america.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+
+  article {
+    margin-top: 20px;
+  }
+}

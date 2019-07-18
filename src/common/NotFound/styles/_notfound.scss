@@ -1,0 +1,11 @@
+@import "../../../styles/core/vars.scss";
+
+.notfound {
+  align-items: center;
+  display: flex;
+  color: $yellow;
+  font-size: 1.6em;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+}

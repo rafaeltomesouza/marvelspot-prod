@@ -1,0 +1,62 @@
+@import "../../../styles/core/vars.scss";
+
+@mixin vote($scale) {
+  &__vote {
+    background-color: $yellow;
+    border-radius: 100px;
+    color: #151515;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+    height: 71px;
+    margin-bottom: 20px;
+    justify-content: center;
+    transform: $scale;
+    width: 252px;
+
+    span {
+      text-align: center;
+    }
+  }
+}
+
+@mixin author($scale) {
+  &__author {
+    font-size: 1.85em;
+    transform: $scale;
+  }
+}
+
+@mixin category($scale) {
+  &__category {
+    font-size: 1.85em;
+    transform: $scale;
+  }
+}
+
+@mixin description($scale) {
+  &__description {
+    font-family: "robotoregular";
+    font-size: 1.3em;
+    transform: $scale;
+  }
+}
+
+.post {
+  margin-top: 30px;
+
+  @include vote(scaleX(1));
+  @include author(scaleX(1));
+  @include category(scaleX(1));
+  @include description(scaleX(1));
+
+  &__invert {
+    transform: scaleX(-1);
+    text-align: right;
+
+    @include vote(scaleX(-1));
+    @include author(scaleX(-1));
+    @include category(scaleX(-1));
+    @include description(scaleX(-1));
+  }
+}

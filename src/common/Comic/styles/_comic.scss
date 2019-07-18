@@ -1,0 +1,105 @@
+@import '../../../styles/core/vars.scss';
+
+@mixin content() {
+  border: 1px solid $gray-dark;
+  border-radius: 15px;
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+}
+
+@mixin image($scale) {
+  &__image {
+    transform: $scale;
+    width: 150px;
+    height: 225px;
+    margin: 20px;
+  }
+}
+
+@mixin aside($scale) {
+  aside {
+    transform: $scale;
+    background: $yellow;
+    border: 1px solid $yellow;
+    border-radius: 15px;
+    color: $black;
+    font-size: 3em;
+    line-height: 1.5;
+    text-align: center;
+    width: 15%;
+  }
+}
+
+@mixin section($scale) {
+  transform: $scale;
+  margin-right: 38px;
+  margin-top: 55px;
+  width: 88%;
+}
+
+@mixin configureText {
+  p:first-child {
+    font-size: 1.7em;
+  }
+
+  p:nth-last-child() {
+    margin-top: 10px;
+  }
+
+  p {
+    font-family: 'robotoregular';
+  }
+}
+
+
+.comic {
+  padding-bottom: 24px;
+
+  // normal visualization
+  &__content {
+    @include content();
+
+    &__comic {
+      display: flex;
+
+      @include image($scale);
+      @include aside($scale);
+
+      p {
+        margin: 0;
+      }
+
+      section {
+        @include section($scale);
+        @include configureText();
+      }
+    }
+  }
+
+  // visualization inverted
+  &__invert {
+    transform: scaleX(-1);
+
+    &__content {
+      @include content();
+
+      &__comic {
+        display: flex;
+
+        @include image($scaleInverted);
+        @include aside($scaleInverted);
+
+        p {
+          margin: 0;
+        }
+
+        section {
+          @include section($scaleInverted);
+          @include configureText();
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,29 @@
+@import '../../../styles/core/vars.scss';
+
+.threads {
+  background-image: url('../../../assets/images/captain-america.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+
+  article {
+    margin-top: 20px;
+  }
+
+  &__comments {
+    background: $gray-dark-transparency;
+    border: 1px solid $gray-dark;
+    border-radius: 15px;
+    margin-left: $marginLeft;
+    margin-right: $marginRight;
+    margin-bottom: 10px;
+    padding-bottom: 19px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    p {
+      margin-bottom: 25px;
+      font-size: 2.5em;
+    }
+  }
+}
