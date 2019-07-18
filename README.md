@@ -178,7 +178,7 @@ To create a production build, use yarn build.
 │       ├── fonts.scss
 │       └── global.scss
 └── yarn.lock
-
+```
 
 ## Create React App
 
