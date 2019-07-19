@@ -8,7 +8,7 @@ We are using an API from Marvel to return all the commics produced and the fireb
 
 ## Requirements to visualize the portal
 
-Browser: Chrome (latest version) / Firefox (lastes version) or Edge.
+Browser: Chrome (latest version) / Firefox (lastest version) or Edge.
 Not compatible with mobile devices yet, but you can have friendly
 visualization on tablets.
 
