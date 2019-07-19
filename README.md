@@ -36,7 +36,7 @@ will use only the email and the username in the website.
 ## How to execute the project in your machine using the dev version
 
 You need to follow these instructions:
-1. Access the project folter and in the console and type command:
+1. Access the project folder and in the console and type command:
 ```npm install```. This command will install all the project dependencies;
 2. After install all dependencies, type the following command:
 ```npm start```. This command will initialize the project.
