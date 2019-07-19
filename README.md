@@ -12,10 +12,15 @@ Browser: Chrome (latest version) / Firefox (lastest version) or Edge.
 Not compatible with mobile devices yet, but you can have friendly
 visualization on tablets.
 
-## Portal developed
+## Technologies used to developed the marvel-spot
 
 Browser: Chrome (latest version)
 OS: MacOS Mojave
+IDE: Visual Studio Code
+Language: JavaScript/React
+API: Marvel
+Database: Firebase
+Hosting: Firebase
 
 ## The project is available on web
 
