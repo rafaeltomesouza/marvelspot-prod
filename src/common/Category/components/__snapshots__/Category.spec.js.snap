@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Category component Should render category properly 1`] = `
+<section
+  className="category"
+>
+  <div
+    className="category__btn category__btn--actived"
+    key="Comment"
+    onClick={[Function]}
+  >
+    <input
+      key="Comment"
+      name="category"
+      type="radio"
+      value="item"
+    />
+    Comment
+  </div>
+  <div
+    className="category__btn category__btn--deactivated"
+    key="Spoiler"
+    onClick={[Function]}
+  >
+    <input
+      key="Spoiler"
+      name="category"
+      type="radio"
+      value="item"
+    />
+    Spoiler
+  </div>
+</section>
+`;
